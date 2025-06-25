@@ -30,6 +30,18 @@ To address these challenges, this project implements a **Retrieval-Augmented Gen
 
 ---
 
+## 🧩 Code Structure & Key Components
+
+| File / Folder           | Purpose                                                     |
+| ----------------------- | ----------------------------------------------------------- |
+| `app/main.py`           | FastAPI backend: authentication, RBAC, `/chat` endpoint     |
+| `app/rag.py`            | RAG pipeline: role-based vector retrieval, prompt creation  |
+| `app/data_processor.py` | Loads documents, generates embeddings, builds vector stores |
+| `ui/Home.py`            | Streamlit UI: login, chat interface, session management     |
+| `Vector Store/`         | Stores Chroma vector databases for each department          |
+
+---
+
 ## 🔑 Roles & Permissions
 
 | Role            | Data Access                                                           |
@@ -58,8 +70,8 @@ To address these challenges, this project implements a **Retrieval-Augmented Gen
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/FinSolve-Internal-Chatbot.git
-cd FinSolve-Internal-Chatbot
+git clone 
+
 ```
 
 ### 2️⃣ Set Up Environment Variables
@@ -68,12 +80,15 @@ Create a `.env` file in the `app/` directory:
 
 ```env
 GROQ_API_KEY=your_api_key_here
-VECTORSTORE_FOLDER=absolute/path/to/Vector Store
+HF_TOKEN= your_huggingface token_here
+VECTORSTORE_DIR=absolute/path/to/Vector Store
+BASE_DATA_DIR=absolute/path/to/data
 ```
 
-### 3️⃣ Install Dependencies
+### 3️⃣ Create environment and Install Dependencies
 
 ```bash
+conda create -p "environmentname"
 pip install -r requirements.txt
 ```
 
@@ -98,17 +113,6 @@ streamlit run ui/Home.py
 
 Visit [http://localhost:8501](http://localhost:8501)
 
----
-
-## 🧩 Code Structure & Key Components
-
-| File / Folder           | Purpose                                                     |
-| ----------------------- | ----------------------------------------------------------- |
-| `app/main.py`           | FastAPI backend: authentication, RBAC, `/chat` endpoint     |
-| `app/rag.py`            | RAG pipeline: role-based vector retrieval, prompt creation  |
-| `app/data_processor.py` | Loads documents, generates embeddings, builds vector stores |
-| `ui/Home.py`            | Streamlit UI: login, chat interface, session management     |
-| `Vector Store/`         | Stores Chroma vector databases for each department          |
 
 ---
 
@@ -119,20 +123,7 @@ Visit [http://localhost:8501](http://localhost:8501)
 * 📌 **Source Referencing for Transparency**
 * ⚙️ **Automatic Vector Store Creation**
 * 📊 **Data Splitter for Quality Assurance**
-
+* 🖥️ **Doc Splitter**
 ---
 
-## 🤝 Contributing
 
-Pull requests and suggestions are welcome!
-For questions, contact the **FinSolve Technologies engineering team**.
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-Empowering **FinSolve teams** with **secure**, **instant**, and **role-specific** knowledge.
