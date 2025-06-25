@@ -123,7 +123,7 @@ Visit [http://localhost:8501](http://localhost:8501)
 * 📌 **Source Referencing for Transparency**
 * ⚙️ **Automatic Vector Store Creation**
 * 📊 **Data Splitter for Quality Assurance**
-* 🖥️ **Doc Splitter**
+* 🖥️ **New Doc(.md/.csv) Upload from UI **
 ---
 
 
