@@ -1,0 +1,17 @@
+ipynb
+ipykernel
+python-dotenv
+streamlit
+langchain
+langchain-text-splitters
+langchain-community
+langchain-core  
+langchain_groq
+langchain_chroma
+langchain_huggingface
+sentence_transformers
+ipywidgets
+unstructured
+markdown
+fastapi
+python-multipart
