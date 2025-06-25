@@ -57,11 +57,11 @@ To address these challenges, this project implements a **Retrieval-Augmented Gen
 
 ## 🚦 How It Works
 
-1️⃣ User logs in via Streamlit UI (username/password)
-2️⃣ FastAPI backend authenticates and determines the user's role
-3️⃣ RAG pipeline retrieves relevant documents from the vector store based on role
-4️⃣ LLM generates a context-rich answer, referencing source documents
-5️⃣ Response is returned to the user, ensuring secure, role-based access
+1️⃣ User logs in via Streamlit UI (username/password)  
+2️⃣ FastAPI backend authenticates and determines the user's role  
+3️⃣ RAG pipeline retrieves relevant documents from the vector store based on role  
+4️⃣ LLM generates a context-rich answer, referencing source documents  
+5️⃣ Response is returned to the user, ensuring secure, role-based access  
 
 ---
 
