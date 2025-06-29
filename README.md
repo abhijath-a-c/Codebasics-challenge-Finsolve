@@ -3,12 +3,14 @@
 Welcome to the **FinSolve Internal Chatbot** project!
 This solution is designed to break down data silos and accelerate decision-making across Finance, Marketing, HR, Engineering, C-Level Executives, and Employees by providing secure, role-specific access to company knowledge.
 
+Check [Codebasics Project Challenge](https://codebasics.io/challenge/codebasics-gen-ai-data-science-resume-project-challenge#current_challenge)
+
 ---
 
 ## 🏢 Project Purpose
 
-FinSolve Technologies, a leading FinTech company, recognized that delays in communication and fragmented data access were hindering productivity and strategic execution.
-To address these challenges, this project implements a **Retrieval-Augmented Generation (RAG)** chatbot with **Role-Based Access Control (RBAC)**, ensuring every team member gets the right information, securely and instantly.
+A Q&A chatbot that retrieve information from company's internal data.<br>
+Department specific access to data
 
 ---
 
@@ -69,8 +71,8 @@ To address these challenges, this project implements a **Retrieval-Augmented Gen
 
 ### 1️⃣ Clone the Repository
 
-```bash
-git clone 
+```CMD
+git clone "link "
 
 ```
 
@@ -88,7 +90,7 @@ BASE_DATA_DIR=absolute/path/to/data
 ### 3️⃣ Create environment and Install Dependencies
 
 ```bash
-conda create -p "environmentname"
+conda create -p "environmentname" Python==3.10 
 pip install -r requirements.txt
 ```
 
@@ -99,18 +101,17 @@ Run `python app/data_processor.py`
 
 ### 5️⃣ Start the FastAPI Backend
 
-```bash
+```CMD
 uvicorn app.main:app --reload
 ```
 
 ### 6️⃣ Start the Streamlit Frontend
 
-```bash
+```CMD
 streamlit run ui/Home.py
 ```
 
 ### 7️⃣ Access the Chatbot
-
 Visit [http://localhost:8501](http://localhost:8501)
 
 
@@ -123,7 +124,7 @@ Visit [http://localhost:8501](http://localhost:8501)
 * 📌 **Source Referencing for Transparency**
 * ⚙️ **Automatic Vector Store Creation**
 * 📊 **Data Splitter for Quality Assurance**
-* 🖥️ **New Doc(.md/.csv) Upload from UI **
+* 🖥️ **New Doc(.md/.csv) Upload from UI**
 ---
 
 
